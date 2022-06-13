@@ -1,0 +1,23 @@
+{% load static %}
+
+<header class="header-section">
+    <div class="header-warp">
+        <div class="header-bar-warp d-flex">
+            <nav class="top-nav-area w-100">
+                <div class="user-panel">
+                    {% if request.user.is_authenticated %}
+                        <a href="{% url 'admin:index' %}">Добро пожаловать, {{ request.user.email }}</a>
+                        {% else %}
+                        <a href="{% url 'admin:index' %}">Вход в админку</a>
+                    {% endif %}
+                </div>
+                {% if request.user.is_authenticated %}
+                    <ul class="main-menu primary-menu">
+                        <li><a href="{% url 'gamers:home' %}">Домашняя</a></li>
+                        <li><a href="{% url 'gamers:players_list' %}">Список игроков</a></li>
+                    </ul>
+                {% endif %}
+            </nav>
+        </div>
+    </div>
+</header>

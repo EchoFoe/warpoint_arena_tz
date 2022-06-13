@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="hero-section overflow-hidden">
+		<div class="hero-slider owl-carousel">
+			<div class="hero-item set-bg d-flex align-items-center justify-content-center text-center"
+                 data-setbg="{% static 'imgs/slider-bg-1.jpg' %}">
+				<div class="container">
+					<h2>WarPoint Arena</h2>
+					<p>Ниже представлены кнопки для эндпоинтов http сервиса</p>
+                    <a href="{% url 'authentication:token_obtain_pair' %}" target="_blank" class="site-btn">API JWT токен
+                        <img src="{% static 'imgs/icons/double-arrow.png' %}" alt="#"/></a>
+                    <a href="{% url 'gamers:api_players' %}" target="_blank" class="site-btn">API по игрокам
+                        <img src="{% static 'imgs/icons/double-arrow.png' %}" alt="#"/></a>
+                    <a href="{% url 'gamers:api_fractions' %}" target="_blank" class="site-btn">API по фракциям
+                        <img src="{% static 'imgs/icons/double-arrow.png' %}" alt="#"/></a>
+                    <a href="{% url 'gamers:api_teams' %}" target="_blank" class="site-btn">API по командам
+                        <img src="{% static 'imgs/icons/double-arrow.png' %}" alt="#"/></a>
+				</div>
+			</div>
+			<div class="hero-item set-bg d-flex align-items-center justify-content-center text-center"
+                 data-setbg="{% static 'imgs/bg_img_1.png' %}">
+				<div class="container">
+					<h2>WarPoint Arena</h2>
+					<p>Ниже представлена документация API сервиса</p>
+					<a href="swagger" target="_blank" class="site-btn">Swagger документация
+                        <img src="{% static 'imgs/icons/double-arrow.png' %}" alt="#"/></a>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

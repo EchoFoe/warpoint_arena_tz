@@ -1,0 +1,146 @@
+[
+{
+    "model": "authentication.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$90feJwHC30LdMtH1N0m5XZ$rHm4w57K6sXXTjs5P+cWGOGs3bZTvb7Lnf5GTqJYRjU=",
+        "last_login": "2022-06-13T16:29:39.077Z",
+        "username": "god",
+        "email": "testmail@gmail.com",
+        "is_active": true,
+        "is_staff": true,
+        "is_superuser": true,
+        "created_at": "2022-06-13T16:13:46.107Z",
+        "updated_at": "2022-06-13T16:13:46.187Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "gamers.team",
+    "pk": 1,
+    "fields": {
+        "name": "Nbey",
+        "is_active": true,
+        "created": "2022-06-13T16:21:34.217Z"
+    }
+},
+{
+    "model": "gamers.team",
+    "pk": 2,
+    "fields": {
+        "name": "Gg",
+        "is_active": true,
+        "created": "2022-06-13T16:26:40.463Z"
+    }
+},
+{
+    "model": "gamers.player",
+    "pk": 1,
+    "fields": {
+        "last_name": "Echo",
+        "first_name": "Pavel",
+        "middle_name": "Dmitrievich",
+        "photo": "player_photos/no-avatar1-man.png",
+        "player_role": "Medic",
+        "progress_points": "10500.0",
+        "team": 1,
+        "is_active": true,
+        "created": "2022-06-13T16:21:38.603Z"
+    }
+},
+{
+    "model": "gamers.player",
+    "pk": 2,
+    "fields": {
+        "last_name": "Kotsar",
+        "first_name": "Nastya",
+        "middle_name": "Gennadievna",
+        "photo": "player_photos/no-avatar1-woman.png",
+        "player_role": "Shooter",
+        "progress_points": "9500.0",
+        "team": 1,
+        "is_active": true,
+        "created": "2022-06-13T16:24:41.682Z"
+    }
+},
+{
+    "model": "gamers.player",
+    "pk": 3,
+    "fields": {
+        "last_name": "Gmirak",
+        "first_name": "Aleksey",
+        "middle_name": "Mihailovich",
+        "photo": "player_photos/no-avatar1-man_Ap5TRJ2.png",
+        "player_role": "Shooter",
+        "progress_points": "10000.0",
+        "team": 1,
+        "is_active": true,
+        "created": "2022-06-13T16:25:58.650Z"
+    }
+},
+{
+    "model": "gamers.player",
+    "pk": 4,
+    "fields": {
+        "last_name": "Yakovlev",
+        "first_name": "Aleksey",
+        "middle_name": "Sergeevich",
+        "photo": "player_photos/no-avatar1-man_u0bL4MM.png",
+        "player_role": "Shooter",
+        "progress_points": "8000.0",
+        "team": 2,
+        "is_active": true,
+        "created": "2022-06-13T16:26:42.941Z"
+    }
+},
+{
+    "model": "gamers.player",
+    "pk": 5,
+    "fields": {
+        "last_name": "Shuvarina",
+        "first_name": "Ulia",
+        "middle_name": "Nikolaevna",
+        "photo": "player_photos/no-avatar1-woman_SiKJ9rK.png",
+        "player_role": "Machine gunner",
+        "progress_points": "8500.0",
+        "team": 2,
+        "is_active": true,
+        "created": "2022-06-13T16:27:28.854Z"
+    }
+},
+{
+    "model": "gamers.player",
+    "pk": 6,
+    "fields": {
+        "last_name": "Holodok",
+        "first_name": "Ekaterina",
+        "middle_name": "Sergeevna",
+        "photo": "player_photos/no-avatar1-woman_PHkKg7y.png",
+        "player_role": "Shooter",
+        "progress_points": "9000.0",
+        "team": 2,
+        "is_active": true,
+        "created": "2022-06-13T16:28:19.199Z"
+    }
+},
+{
+    "model": "gamers.fraction",
+    "pk": 1,
+    "fields": {
+        "name": "WestSide",
+        "team": 1,
+        "leader": 1,
+        "is_active": true,
+        "created": "2022-06-13T16:30:20.357Z",
+        "players_list": [
+            1,
+            3,
+            2,
+            6,
+            5,
+            4
+        ]
+    }
+}
+]
