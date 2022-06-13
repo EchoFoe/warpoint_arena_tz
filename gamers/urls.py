@@ -11,7 +11,7 @@ app_name = 'gamers'
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('employees_list/', views.players_list, name='players_list'),
+    path('players_list/', views.players_list, name='players_list'),
     path('', include(router.urls,)),
     path('api/players/', views.PlayerList.as_view({'get': 'list'}), name='api_players'),
     path('api/departments/', views.TeamList.as_view({'get': 'list'}), name='api_teams'),
